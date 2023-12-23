@@ -1,0 +1,30 @@
+body
+{
+  background-color: bisque;
+  font-family: 'Times New Roman', Times, serif;
+}
+.h1
+{
+ text-align: center;
+ text-decoration: underline;
+ text-transform: capitalize;
+}
+.tr
+{ 
+  text-shadow: 2px;
+  align-items: center;
+}
+.th
+{
+    border-style: 1px solid;
+}
+.back
+{
+  border: 1px;
+  color: white;
+  background-color: rgb(120, 158, 158);
+  border-radius: 14px;
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/95218c910d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="firm">
+    <h4 class="card-title "> <img class="img" src="/assets/logo-dark.png" alt="Harare Polytechnic Logo" class="logo">
+      <strong>Welcome to the Harare Polytechnic College Student
+      Portal</strong></h4>
+    <p class="card-text">
+   <i> Embarking on an exciting upgrade to our ICT infrastructures for an enhanced learning experience,
+    we invite you to  update your personal records effortlessly through our portal. 
+    Start by creating your account with basic details
+    like surname, national ID, and student registration number.
+    Once verified, the portal lets you establish 
+    your online Student Portal account by choosing a secure password—a seamless 
+    and secure connection to your education journey.
+  </i></p>
+  
+  <div class="for">
+    
+    <div class="form-container">
+    
+<div class="tab">
+    <a href="register.html" class="tablink active">Register</a>
+    <a href="login.html" class="tablinks">Login</a>
+</div>
+<br><br>
+<p class="card-texts"><i> Please provide your <strong>National ID</strong> and <strong>Password</strong> to 
+login to your account. If you don't have an account click
+ on the register button next to the login button </i>
+</p><br><br>
+      <!-- Login Form -->
+      <form action="/php/login.php" method="post" class="form-login" id="loginForm" >
+        <fieldset class="form-group">
+          <label for="national_id"><i class="la Nd"></i><i class="fa-solid fa-id-card" style="color: #46528b;"></i> National ID</label>
+          <input name="national_id" type="text" class="form-control" id="national_id" value="" title="National Id"
+            placeholder="99-999999X99" required>
+        </fieldset>
+        <fieldset class="form-group">
+          <div class="input-container">
+            <label for="password">
+              <i class="fa-solid fa-lock" style="color: #1c1c1c;"></i> Password
+            </label>
+            <input type="password" id="password" placeholder="password" class="input__field" required title="password">
+            <img alt="Eye Icon" title="Eye Icon" src="/assets/eye.svg" class="input__icon">
+           </div>
+           </fieldset>
+             <div class="chekbox">
+             <div class="checkbox">
+               
+               <input type="checkbox" id="rememberMe" name="rememberMe">
+               <label for="rememberMe" title="remember me">Remember Me</label> 
+          </div>
+            <br>
+          </div><p class="forgot" title="forgot password"><a href="/forgot-password">Forgot Password?</a></p>
+        <button type="submit" title="Sigin button" class="btn btn-outline-info btn-block"><i class="ft-check"></i> Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <script  src="/js/login.js"> </script>
+  <script src="/js/reg.js"></script>
+  
+</body>
+
+</html>

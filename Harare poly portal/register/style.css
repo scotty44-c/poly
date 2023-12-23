@@ -1,0 +1,294 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+label,
+button,
+input,
+select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* Basic styling */
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-image: url(/assets/pexels-mudassir-ali-2680270.jpg);
+ background-size: cover;
+ background-position: center ;
+ background-attachment: fixed;
+
+  
+}
+.img {
+  max-width: 100%;
+  height: 34vh; 
+  display: block; 
+  margin: 0 auto; 
+  max-height: 150px; 
+}
+.firm {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #f4f3ef;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(76, 73, 73, 0.1);
+}
+.card-style
+{
+ font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
+}
+.card-title
+{
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
+  text-align: center;
+  font-size: 15px;
+}
+
+.for {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #d0caca;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.tab {
+  display: flex;
+}
+
+.tablink {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  background-color: #308b97;
+  color: #241818;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+.tablinks {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  background-color: #51748b;
+  color: #241818;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Style for the Remember Me checkbox */
+input[type="checkbox"]
+{
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.sub-button
+{
+  display: inline-block;
+}
+/* Style for the Remember Me checkbox */
+.checkbox {
+  display: inline-flex; 
+  align-items: center; 
+  margin-bottom: 0.5px;
+  margin-top: 1.5px;
+  box-sizing: border-box;
+  padding: 0;
+ }
+ 
+ .checkbox label {
+  margin-right: 5px; 
+   margin-bottom: 0.5px;
+  margin-top: 1.5px;
+}
+ 
+ .checkbox input[type="checkbox"] {
+  margin: 0;
+  
+ }
+
+
+/* Style for the Forgot Password link */
+.forgot
+{ font: bold;
+  flex: 1;
+  font-size: auto;
+  padding-left: 75%;
+  padding-bottom: 5%;
+}
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input__field {
+  padding-right: 20px; 
+}
+
+.input__icon {
+  position: absolute;
+  top: 65%;
+  left: 300px; 
+  transform: translateY(-50%);
+  cursor: pointer; 
+}
+
+
+.tablinks.active {
+  background-color: #d09999;
+  text-decoration: underline;
+  border-bottom: #0c0e0f;
+}
+.tablink.active {
+  background-color: #d09999;
+  text-decoration: underline;
+  border-bottom: #0c0e0f;
+}
+.card-texts
+{   justify-content: baseline;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;;
+}
+.form-group
+{
+  border: none;
+}
+.form-reg,
+.form-signin.active {
+  display: block;
+}
+.form-reg fieldset,
+.form-signin fieldset {
+  margin-bottom: 24px;
+}
+
+.form-reg label,
+.form-signin label {
+  display: block;
+  margin-bottom: 12px;
+  margin: auto;
+}
+
+.form-login input
+{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-style: solid;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.form-reg input
+{
+  width: 65%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-style: solid;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.form-reg select
+{
+  width: 65%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-style: solid;
+  border: 1px solid #5b6f7b;
+  border-radius: 4px;
+}
+
+.form-login  {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-style: solid;
+  border: 1px solid #be8d8d;
+  border-radius: 4px;
+}
+.sub-button
+{
+  text-align: center;
+  align-items: center;
+  width: 20px;
+  border-radius: 25px;
+}
+
+.form-reg button {
+  width: 60%;
+  align-items: center;
+  padding: 10px;
+  margin-left: 18%;
+  box-sizing: border-box;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, text-decoration 0.3s ease;
+}
+
+.form-login button {
+  width: 60%;
+  align-items: center;
+  padding: 10px;
+  margin-left: 15%;
+  box-sizing: border-box;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, text-decoration 0.3s ease;
+}
+.form-reg button:hover {
+  background-color: rgb(53, 96, 107);
+  cursor: pointer;
+}
+.form-login button:hover {
+  background-color:  #169090; ;
+  color: #f3f3f3;
+  cursor: pointer;
+}
+.form-reg button.active {
+  border-bottom: #3498db;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0 0 10px rgba(119, 236, 234, 0.3);
+}
+
+.form-signin button.active {
+  border-start-end-radius: underline;
+  box-shadow: 0 0 10px rgba(116, 107, 107, 0.3);
+}
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+  .for {
+    margin: 20px;
+  }
+}

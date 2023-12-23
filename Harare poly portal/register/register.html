@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/95218c910d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="firm">
+    <h4 class="card-title "> <img class="img" src="/assets/logo-dark.png" alt="Harare Polytechnic Logo" class="logo">
+      <strong>Welcome to the Harare Polytechnic College Student
+      Portal</strong></h4>
+    <p class="card-text">
+   <i> Embarking on an exciting upgrade to our ICT infrastructures for an enhanced learning experience,
+    we invite you to  update your personal records effortlessly through our portal. 
+    Start by creating your account with basic details
+    like surname, national ID, and student registration number.
+    Once verified, the portal lets you establish 
+    your online Student Portal account by choosing a secure password—a seamless 
+    and secure connection to your education journey.
+  </i></p>
+  
+  
+  <div class="for">
+    
+    <div class="form-container">
+    
+<div class="tab">
+    <a href="register.html" class="tablink active">Register</a>
+    <a href="login.html" class="tablinks">Login</a>
+</div>
+      <!-- Registration Form -->
+      <form action="check.php" method="post" class="form-reg" id="registerForm">
+        <p class="card-texts">
+          <br><i>Please provide your <strong>Surname</strong>, <strong>National ID</strong> and <strong>Student ID</strong> for verification purposes. 
+          Your National ID should follow the format 99-999999X99, 
+          that is there shouldn't be any spaces and the only hyphen(-) should be after the first two digits.</i>
+        </p><br>
+        <fieldset class="form-group">
+          <label for="surname"><i class="fa-regular fa-user"></i></i> Surname</label>
+          <input name="Surname" type="text" class="form-control" id="surname" value=""
+            placeholder="Surname" required>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="national_id"><i class="la Nd"></i><i class="fa-solid fa-id-card" style="color: #46528b;"></i> National ID</label>
+          <input name="national_id" type="text" class="form-control" id="national_id" value=""
+            placeholder="99-999999X99" required>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="student_id"> <i class="fa-solid fa-id-card-clip" style="color: #522f75;"></i> Student ID</label>
+          <input name="student_id" type="text" class="form-control" id="student_id" value=""
+            placeholder="Student ID" required>
+        </fieldset>
+        <fieldset  class="form-group">
+          <div class="input-container">
+            <label for="password">
+              <i class="fa-solid fa-lock" style="color: #1c1c1c;"></i> Password
+            </label>
+            <input type="password" id="password" placeholder="password" class="input__field" required>
+            <img alt="Eye Icon" title="Eye Icon" src="/assets/eye.svg" class="input__icon">
+          </div>
+          
+      
+        </fieldset>
+        <fieldset  class="form-group">
+          <div class="input-container">
+            <label for="confirm-password">
+              <i class="fa-solid fa-lock" style="color: #1c1c1c;"></i> Confirm Password
+            </label>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" class="input__field" required>
+            <img alt="Eye Icon" title="Eye Icon" src="/assets/eye.svg" class="input__icon">
+          </div>
+           </fieldset>
+       
+<fieldset  class="form-group">
+    <label for="department"> <i class="fa-solid fa-building" style="color: #337a76;"></i> Department</label>
+    <select name="department" id="department" required>
+        <option value="">Choose Department</option>
+        <option value="1">Applied Arts</option>
+        <option value="2">Automotive Engineering</option>
+        <option value="3">Civil Engineering</option>
+        <option value="4">Business Studies</option>
+        <option value="5">Construction Engineering</option>
+        <option value="6">Electrical Engineering</option>
+        <option value="7">ICT</option>
+        <option value="8">Library and Information Science</option>
+        <option value="9">Mass Communication</option>
+        <option value="10">National Strategic Studies</option>
+        <option value="11">Office Management</option>
+        <option value="12">Printing and Graphic Arts</option>
+        <option value="13">Science and Technology</option>
+    </select>
+</fieldset>
+
+        <fieldset  class="form-group">
+          <label for="department"> <i class="fa-solid fa-chalkboard-user"></i> Level</label>
+          <select name="options" id="department" required>
+            <option value="">Choose Level </option>
+            <option value="">NC</option>
+            <option value="">ND</option>
+            <option value="">HND</option>
+          </select>
+        </fieldset>
+        <button type="submit" class=" sub-button"> Register</button>
+      </form>
+
+      <!-- Login Form -->
+      <form action="/php/login.php" method="post" class="form-login" id="loginForm" style="display: none;">
+        <fieldset class="form-group form-group-style">
+          <label for="national_id"><i class="la la-slack"></i> Your National ID</label>
+          <input name="national_id" type="text" class="form-control" id="national_id" value=""
+            placeholder="99-999999X99" required>
+        </fieldset>
+        <fieldset>
+          <label for="password">Password</label>
+          <input name="password" type="password" class="form-control" id="password" value=""
+            placeholder="Your password" required>
+        </fieldset>
+        <button type="submit" class="btn btn-outline-info btn-block"><i class="ft-check"></i> Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <script  src="/js/reg.js"> </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+  background-image: url(/assets/pexels-mudassir-ali-2680270.jpg);
+}
+
+.navbar {
+  background-color: rgb(243, 248, 248) 959;
+  color: rgb(187, 168, 168);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+ 
+}
+
+.navbar ul {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 40px;
+  background-color: hsl(184, 19%, 69%);
+}
+
+.navbar ul li {
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+.navabar a:hover
+{
+  background-color: hsl(0, 0%, 10%);
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  width: calc(50% - 20px); /* 50% width with 20px gap */
+  box-sizing: border-box;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(186, 170, 170, 0.1);
+}
+.card :active
+{
+  text-decoration: none;
+}
+.h1
+{
+  display: block;
+}
+
+.ini
+{
+   display: flexbox;
+   scale: 2;
+}
+@media (min-width: 768px) {
+  .card {
+    width: calc(33.33% - 50px); /* 33.33% width with 20px gap for desktop */
+  }
+}
